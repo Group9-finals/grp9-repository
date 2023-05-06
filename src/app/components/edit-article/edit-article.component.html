@@ -1,0 +1,55 @@
+<div class="row justify-content-center mt-5">
+  <h2>Edit Your Article</h2>
+  <div class="col-md-4">
+    <form [formGroup]="updateForm" enctype="multipart/form-data" (ngSubmit)="onUpdate() ">
+
+      <div class="form-group">
+          <label>Name:</label>
+          <input class="form-control" type="text" formControlName="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" type="text" formControlName="email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Date</label>
+          <input class="form-control" type="text" formControlName="date" required>
+        </div>
+
+        <div class="form-group">
+          <label>Title of the Article:</label>
+          <input class="form-control" type="text" formControlName="title" required>
+        </div>
+
+        <div class="form-group">
+          <label>Content:</label>
+          <input class="form-control" type="text" formControlName="content" required>
+        </div>
+      
+        <!--<div class="form-group">
+          <label>File Name:</label>
+          <input class="form-control" type="text" formControlName="fileName" required>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Thumbnail: </label>
+          <input class="form-control" type="file" (change)="onFileSelect($event)"  required>
+        </div>
+
+        <div *ngIf="imageData">
+          <img [src]="imageData" [alt]="updateForm.value.name" />
+        </div>-->
+        
+      <div class="row">
+        <div class="column">
+          <button class="btn btn-primary btn-block" type="submit">Update</button>
+        </div>
+        <div class="column">
+          <button class="btn btn-primary btn-block" (click) = "onCancel()" ontype="button">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+
+<section id="landing">
+  <div class="center">
+    <div class="img-container">
+      <img
+        src="https://www.amnesty.org.au/wp-content/uploads/2021/09/pexels-cottonbro-8088499-scaled.jpg"
+        alt=""
+      />
+      <div class="centered">Racism</div>
+    </div>
+  </div>
+  
+</section>
+
+<section id="about">
+  <div class="row">
+    <div class="column">
+      <img
+        src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/313433441_5538462246252268_8336681953475725404_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YUtccud3kDoAX8bYmft&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfDiGd09d_b3kSh8uUYumJfQ6I1XP7EiNKh-8bxc47-rdA&oe=645660BB"
+        alt=""
+        width="350" height="500"
+      />
+    </div>
+    <div class="column">
+      <h2 class="parag-about">About Us</h2>
+      <p class="parag-about">Welcome to our website! We are a team of passionate individuals who are committed to providing our users with valuable resources, insightful content, and exceptional experiences. Our mission is to create a platform that empowers people to learn, grow, and connect with others who share their interests and aspirations. Whether you are seeking information, inspiration, or community, we have something for you. So explore our website, engage with our content, and join our community we look forward to sharing this journey with you!</p>
+    </div>
+  </div>
+</section>
+
+<section id="featured">
+  <div>
+    <h2>Featured Article</h2>
+    <p class="feat-art">Welcome to our Featured Article section, where our user showcase thier best and most engaging content from our website. This week, we are thrilled to present an article that is not only informative but also thought-provoking, providing readers with new insights and perspectives on a topic of great interest. So without further ado, let's dive into our latest Featured Article and discover what makes it truly special.</p>
+  </div>
+  <div class="grid-container" *ngIf="profiles.length > 0">
+    <div *ngFor="let profile of profiles" class="grid-item">
+      <img [src]="profile.imagePath" [alt]="profile.name" routerLink="/view-article">
+      <div>
+        <a class="title" routerLink="/view-article">{{ profile.name }}</a>
+        <p>{{ profile.date }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="create-article">
+  <h2>Create Your Own Article</h2>
+  <p class="cr-art">You have a unique perspective and valuable insights to share with the world. Don't be afraid to put your thoughts into words and create your own article. Your contribution has the potential to inspire, educate, and inform others, and you never know who might benefit from reading what you have to say. So go ahead and unleash your creativity, and let your voice be heard through your very own article!</p>
+  <div class="cont">
+    <a routerLinkActive="active" routerLink="/create-article" class="add-button">Add an article</a>
+  </div>
+</section>
+
+<section id="featured">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342103647_909915996793920_8770001946852195982_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=5_mrpRKW0tIAX-kVn5w&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSPT2FByfO4_tR8QtRY0C_GIQcN9QD4xHTHJpGBhxp4lw&oe=64788F43"
+              alt=""/>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h4>Join our community</h4>
+            <p class="text">123 Anywhere St. Any city ST 12345<br>Tel: +123-456-7890<br>Email: mamamo@email.com</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h4>Business Hours</h4>
+            <p class="text">Monday - Friday: 9am-6am<br>Saturday: 9am-12nn</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Get Social</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/iamnoieee" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/iamnoieee" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/iamnoieee" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</section>

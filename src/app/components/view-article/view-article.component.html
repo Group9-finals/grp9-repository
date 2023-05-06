@@ -1,0 +1,22 @@
+<h1>All Profiles</h1>
+<hr />
+<div>
+  <div *ngFor="let profile of profiles; let i = index" class="profile">
+    <div>
+      <h1><b><span>{{ profile.title }}</span></b></h1>
+      <p class="sub"><span>{{ profile.name }} | <span>{{ profile.date }}</span></span></p>
+      <p class="email">Email: <span>{{ profile.email }}</span></p>
+      <img [src]="profile.imagePath" [alt]="profile.name" />
+      <p><span>{{ profile.content }}</span></p>
+      <hr>
+      <p>
+        <button class="btn-pm" [routerLink]="['/edit-article', profile._id]">
+          Edit
+        </button>
+        <button class="btn-danger" (click)="onDelete(profile._id)">
+          Delete
+        </button>
+      </p>
+    </div>
+  </div>
+</div>

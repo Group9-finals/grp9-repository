@@ -1,0 +1,26 @@
+/* Style for the navigation bar */
+
+.navbar {
+  padding-left: 3%;
+  padding-right: 3%;  
+}
+
+.navbar-brand{
+  color: black;
+  font-family: 'Open Sauce One', sans-serif;
+  font-size: 25px;
+  margin-right: 5%;
+}
+
+/* Style for the navigation links */x
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 16;
+  font-family: 'Open Sauce One', sans-serif;
+  margin-right: 1.5rem;
+}
+
+/* Style for the router outlet */
+router-outlet {
+  margin-top: 4rem;
+}

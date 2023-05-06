@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+  }
+  .sub {
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    font-size: 1em;
+  }
+  .article {
+    text-align: justify;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    font-style: oblique;
+  }
+  button {
+    width: 15%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .email{
+    text-align: center;
+    font-style: italic;
+  }
+  
